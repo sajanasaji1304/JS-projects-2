@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">username</label>
+    <div>
+    <input type="text" name="username" id="uname">
+    </div>
+    <label for="">password</label>
+    <div>
+        <input type="number" name="password" id="password">
+    </div>
+    <label for="">email</label>
+    <div>
+        <input type="email" name="email" id="email">
+    </div>
+    <label for="">number</label>
+    <div>
+        <input type="number" name="mobile" id="mobile">
+    </div>
+    <button onclick="addUser()">save</button>
+    <script>
+        function User(uname,password,email,mob){
+        this.username=uname
+        this.password=password
+        this.email=email
+        this.mob=mob
+    }
+    function addUser(){
+            // alert("hello")
+    let username=document.getElementById("uname").value
+    // alert(username)
+    let password=document.getElementById("password").value
+    let email=document.getElementById("email").value
+    let mobile=document.getElementById("mobile").value
+    let user1=new User(username,password,email,mobile)
+    console.log(user1)
+    }
+    </script>
+    
+
+    
+</body>
+</html>
